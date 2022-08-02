@@ -1,0 +1,43 @@
+.link_item{
+    @apply flex items-center text-gray-500 font-medium relative;
+    transition: all .2s ease-in-out;
+
+    > span {
+        transition: all .2s ease-in-out;
+    }
+
+    &:hover{
+        @apply text-black font-semibold relative;
+        > span{
+            @apply text-gray-400;
+        } 
+    }
+
+    &.active{
+        @apply text-black font-semibold relative;
+
+        > span{
+            @apply text-gray-400;
+        } 
+    }
+
+    > span {
+        @apply mr-4 p-2 rounded-xl text-white;
+        background-color: #363440;
+
+        &.image{
+            @apply overflow-hidden p-0 shadow flex items-center justify-center;
+            margin-right: 1rem !important;
+            background: none;
+            border: 1px solid #363440;
+        }
+    }
+
+    > b {
+        @apply font-normal;
+    }
+
+    > span.number {
+        @apply text-red-500 ml-5;
+    }
+}
