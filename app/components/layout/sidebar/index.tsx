@@ -1,16 +1,20 @@
+import clsx from 'clsx';
 import Link from 'next/link';
 import { FC } from 'react';
 import { Menu } from './menu';
 import { menu } from './menu/menu.data';
+import styles from './Sidebar.module.scss';
 
-type Props = {};
+type SidebarTypeProps = {
+    visable: boolean;
+    onClose: () => void;
+};
 
-export const Sidebar: FC = () => {
+export const Sidebar: FC<SidebarTypeProps> = ({visable, onClose}) => {
     return (
-        <aside className='py-5 px-7'>
-            <Link href='/'>
-                <a className='text-2xl font-semibold text-black'>Youtube</a>
-            </Link>
+        <aside className={clsx(styles.sidebar, {
+            [styles.active]: visable
+        })}>
             <Menu items={menu}/>
         </aside>
     );

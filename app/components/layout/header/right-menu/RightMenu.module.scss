@@ -1,0 +1,22 @@
+.auth_btn{
+    @apply flex items-center border-x border-y border-blue text-blue;
+    padding: 6px 10px;
+    font-weight: 500;
+    border-radius: 3px;
+    font-size: 15px;
+    text-transform: uppercase;
+
+    .auth_btn_icon{
+        font-size: 22px;
+        margin-right: 5px;
+    }
+}
+.user_box{
+    @apply flex items-center justify-center cursor-pointer overflow-hidden;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    .user_img{
+        border-radius: 50%;
+    }
+}

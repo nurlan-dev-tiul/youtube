@@ -11,6 +11,8 @@ module.exports = {
       colors: {
         primary: '#ff7662',
         purple: '#6c5ecf',
+        blue: '#065fd4',
+        yellow: '#f9d71c',
         gray: {
           400: '#9898ad',
           500: '#6b6b7b',
@@ -52,8 +54,11 @@ module.exports = {
         base: '1.4rem',
         lg: '1.5rem',
         xl: '1.6rem'
+      },
+      borderColor: {
+        gl: '#c6c6c6',
+        blue: '#065fd4'
       }
-      
     },
   },
   plugins: [

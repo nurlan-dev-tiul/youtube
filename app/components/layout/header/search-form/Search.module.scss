@@ -1,0 +1,13 @@
+.search_btn{
+    @apply flex justify-center items-center;
+    width: 70px;
+    border-right: 1px solid #c6c6c6;
+    border-top: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+    background-color: #f0f0f0;
+
+    .search_btn_icon{
+        font-size: 24px;
+        color: #010101;
+    }
+}

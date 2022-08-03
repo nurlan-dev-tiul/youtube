@@ -1,0 +1,13 @@
+.sidebar{
+    height: 100%;
+    position: fixed;
+    width: 240px;
+    transition: all .4s ease;
+    z-index: 2;
+    padding-top: 60px;
+
+    margin-left: 25px;
+    &.active{
+        width: 60px;
+    }
+}

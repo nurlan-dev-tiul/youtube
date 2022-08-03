@@ -1,0 +1,14 @@
+.content{
+	background-color: rgb(249 250 251);
+    position: relative;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    left: 240px;
+    transition: all .4s ease;
+    z-index: 3;
+    padding-top: 70px;
+    &.active{
+        width: calc(100% - 80px);
+        left: 80px;
+    }
+}
